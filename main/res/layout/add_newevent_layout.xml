@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200">
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="textCapSentences"
+        android:layout_margin="20dp"
+        android:gravity="center"></EditText>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/setEventTime"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/time"
+        android:layout_margin="10dp"
+        android:layout_weight="1"></ImageButton>
+    <TextView
+        android:id="@+id/eventTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00 AM"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_weight="2"></TextView>
+        <CheckBox
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_weight="1"></CheckBox>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"></Button>
+
+
+</LinearLayout>
